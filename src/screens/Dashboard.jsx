@@ -9,7 +9,7 @@ export default function Dashboard() {
 
     const fetchData = async () => {
 
-        await axios.get("https://newsapi.org/v2/everything?q=tesla&from=2023-03-13&sortBy=publishedAt&apiKey=42998aa99730426692c6f8f4b7e30e2c").then((res) => setArticles(res.data.articles)).catch((err) => console.log(err))
+        await axios.get("https://newsapi.org/v2/everything?q=apple&from=2023-04-13&to=2023-04-13&sortBy=popularity&apiKey=1edcd6fe602748f294df85e406f3d6c1").then((res) => setArticles(res.data.articles)).catch((err) => console.log(err))
 
 
     }
